@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Quizzer</string>
+    <string name="sets">Sets</string>
+    <string name="score">Score</string>
+    <string name="banner_id">ca-app-pub-5750017243615163/5619729511</string>
+    <string name="interstitialAd_id">ca-app-pub-5750017243615163/8943008800</string>
+    <string name="timer">0:20</string>
+
+
+</resources>

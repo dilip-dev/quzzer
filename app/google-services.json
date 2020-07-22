@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "589169053454",
+    "firebase_url": "https://quizzer-cae44.firebaseio.com",
+    "project_id": "quizzer-cae44",
+    "storage_bucket": "quizzer-cae44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589169053454:android:d6fa9c14722f9b70f7d15f",
+        "android_client_info": {
+          "package_name": "com.sangalo.quizzer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589169053454-4e9ru01ihvqd68i3gcilmcul2ch84qcl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFz5rBbQKvxGvI4Wmf1cqKFcgTwsuthME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589169053454-4e9ru01ihvqd68i3gcilmcul2ch84qcl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

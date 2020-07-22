@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="424dp"
+        android:layout_height="320dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/start_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="42dp"
+            android:layout_gravity="center">
+
+        </TextView>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Start Quiz"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:stateListAnimator="@null"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toTopOf="@+id/bookmarks_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bookmarks_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Bookmarks"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:stateListAnimator="@null"
+        android:backgroundTint="#bdbdbd"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_id">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>
